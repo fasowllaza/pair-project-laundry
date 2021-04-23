@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <title>Register</title>
+  <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        min-height: 100vh;
+        background-color: #eee;
+        display: flex;
+        font-family: sans-serif;
+    }
+    .container{
+      margin: auto;
+      width: 500px;
+      max-width: 90%;
+    }
+    .container form{
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      background-color: white;
+      border-radius: 4px;
+      box-shadow: 0 8px 16px rgba(0,0,0,.3);
+    }
+    .container form h1{
+      text-align: center;
+      margin-bottom: 24px;
+      color: #222
+    }
+    .container form .form-control{
+      width: 100%;
+      height: 40px;
+      background: white;
+      border-radius: 4px;
+      border: 1px solid silver;
+      margin: 10px 0 18px 0;
+      padding: 0 16px;
+    }
+    .container form .btn{
+      margin-left: 50%;
+      transform: translateX(-50%);
+      width: 120px;
+      height: 34px;
+      border: none;
+      outline: none;
+      background: red;
+      cursor: pointer;
+      font-size: 16px;
+      text-transform: uppercase;
+      color: white;
+      border-radius: 4px;
+      transition: 3s;
+    }
+    .container form .btn:hover{
+      opacity: .7;
+    }
+    .container-signin{
+      text-align: center;
+    }
+  </style>
+<body>
+
+  <div class="container">
+    <form action="/register" method="post">
+      <h1>Register</h1>
+      <div class="form-group">
+        <label for="firstName"><b>First Name</b></label>
+        <input class="form-control" type="text" placeholder="Enter First Name" name="firstName" id="firstName" value="" required><br><br>
+      </div class="form-group">
+        <label for="lastName"><b>Last Name</b></label>
+        <input class="form-control" type="text" placeholder="Enter Last Name" name="lastName" id="lastName" value="" required><br><br>
+      <div></div>
+        <label for="userName"><b>User Name</b></label>
+        <input class="form-control" type="text" placeholder="Enter User Name" name="userName" id="userName" value="" required><br><br>
+      <div></div>
+        <label for="address"><b>Address</b></label>
+        <input class="form-control" type="text" placeholder="Enter Address" name="address" id="address" value="" required><br><br>
+      <div></div>
+        <label for="email"><b>Email</b></label>
+        <input class="form-control" type="text" placeholder="Enter Email" name="email" id="email" value="" required><br><br>
+      <div></div>
+        <label for="noMobilePhone"><b>Phone Number</b></label>
+        <input class="form-control" type="text" placeholder="Enter Phone Number" name="noMobilePhone" id="noMobilePhone" value="" required><br><br>
+      <div></div>
+        <label for="psw"><b>Password</b></label>
+        <input class="form-control" type="password" placeholder="Enter Password" name="password" id="psw" value="" required><br><br>
+      <div></div>
+      <input type="submit" class="btn" value="Login"><br><br>
+
+      <div class="container-signin">
+        <p>Already have an account? <a href="/login">Login</a>.</p>
+      </div>
+    </form>
+
+  </div>
+
+
+</body>
+</html>

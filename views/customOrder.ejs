@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Custom Order</h1>
+
+  <form action="/order" method="POST">
+    First Name:<br></br>
+    <input type="text" name="first_name" placeholder="input your first name"><br></br>
+    Last Name:<br></br>
+    <input type="text" name="last_name" placeholder="input your last name"><br></br>
+    Email:<br></br>
+    <input type="text" name="email" placeholder="input your email"><br></br>
+    <br></br>
+    <select name="hari">
+      <option value="1">1 hari pencucian</option>
+      <option value="2">2 hari pencucian</option>
+      <option value="3">3 hari pencucian</option>
+      <option value="4">4 hari pencucian</option>
+    </select>
+  
+    <h2>Menggunakan pewangi akan di charge Rp 30.000</h2>
+  
+    Ya<br></br>
+    <input type="radio" value="true" name="is_parfum"><br></br>
+    Tidak<br></br>
+    <input type="radio" value="false" name="is_parfum"><br></br>
+  
+    <h2>Disaetrika akan di charge Rp 30.000</h2>
+    Ya<br></br>
+    <input type="radio" value="true" name="is_setrika"><br></br>
+    Tidak<br></br>
+    <input type="radio" value="false" name="is_setrika"><br></br>
+  
+    Celana<br></br>
+    <input type="text" name="celana" placeholder="10000 per kg"><br></br>
+    Baju<br></br>
+    <input type="text" name="baju" placeholder="10000 per kg"><br></br>
+    Pakaian Dalam<br></br>
+    <input type="text" name="pakaian_dalam" placeholder="10000 per kg"><br></br>
+    <br></br>
+    <input type="submit" value="Submit">
+  </form>
+
+
+</body>
+</html>
